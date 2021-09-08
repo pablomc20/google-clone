@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-size: 1.1rem;
+}
+a {
+    text-decoration: none;
+    /* cursor: pointer; */
+}
+header {
+    width: 100%;
+    height: 6rem;
+    padding: 1.5rem 0;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section {
+    width: 24rem;
+    height: inherit;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav .nav-right-section a {
+    margin: 10px;
+    color: #000000;
+    font-size: 1.4rem;
+}
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+nav .nav-right-section a img {
+    border-radius: 50%;
+}
+main {
+    width: 100%;
+    height: calc(100vh - 18rem);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+main .main-logo img {
+    max-width: 30rem;
+    margin: 2rem 0;
+}
+main .main-input-group .form-group {
+    width: 50rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 1rem 1rem;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    margin-bottom: 2rem;
+}
+main .main-input-group .form-group:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+main .main-input-group .form-group > input {
+    width: 45rem;
+    height: 2rem;
+    padding: 0 .5rem;
+    border: none;
+    outline-style: none;
+    box-shadow: 30px;
+}
+main .form-group .search-icon {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+main .form-group .microphone-icon {
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+main .main-buttons button {
+    width: 16rem;
+    height: 4rem;
+    margin: 0 .6rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    color: #5f6368;
+}
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    font-weight: bold;
+    background-color: #f8f8f8;
+}
+main .main-buttons span {
+    text-align: center;
+    display: block;
+}
+footer {
+    width: 100vw;
+    height: 12rem;
+    background: rgb(250, 251, 251);
+    color: rgb(161, 161, 161);
+    font-size: 1.2em;
+    display: flex;
+    flex-flow: column nowrap;
+    height: inherit;
+}
+footer a {
+    color: inherit;
+}
+footer .footer-link {
+    display: flex;
+    justify-content: space-between;
+}
+footer .nav-footer {
+    height: 6rem;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+}
+footer .nav-footer li {
+    padding: 0 2rem;
+    margin: auto .8rem;
+}
+footer .top-nav-footer {
+    border-bottom: .5px solid #dee0e2;
+}
+footer .top-nav-footer {
+    height: 6rem;
+    padding: 2rem 3.5rem;
+}
+@media screen and (max-width: 700px) {
+    main section:nth-child(2) {
+        width: 90%;
+    }
+    ul.nav-footer {
+        justify-content: center;
+    }
+}
